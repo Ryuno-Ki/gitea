@@ -44,7 +44,10 @@
     "wrap-ansi": "8.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "7.18.2",
     "@happy-dom/jest-environment": "4.0.1",
+    "@testing-library/vue": "5.8.3",
+    "@vue/vue2-jest": "28.0.0",
     "eslint": "8.15.0",
     "eslint-plugin-html": "6.2.0",
     "eslint-plugin-import": "2.26.0",

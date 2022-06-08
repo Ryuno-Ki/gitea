@@ -6,6 +6,8 @@ export default {
   testTimeout: 20000,
   transform: {
     '\\.svg$': '<rootDir>/js/testUtils/jestRawLoader.js',
+    // See https://github.com/vuejs/vue-jest#installation
+    '\\.vue$': '@vue/vue2-jest',
   },
   verbose: false,
 };
