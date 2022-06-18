@@ -4,12 +4,13 @@ import {render} from '@testing-library/vue';
 import ActivityHeatmap from './ActivityHeatmap.vue';
 
 test('ActivityHeatmap', () => {
-  const helpers = render(ActivityHeatmap, {
+  const {getByText} = render(ActivityHeatmap.default, {
     props: {
-      values: [],
-    }
+      values: [{
+        date: '2022-06-18',
+        count: 42,
+      }]
+    },
   });
-  const {getByText} = helpers;
-  console.log('Component', ActivityHeatmap);
-  getByText('contributions in the last 12 months');
+  getByText(/contributions in the last 12 months/);
 });

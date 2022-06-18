@@ -47,10 +47,7 @@ const luminanceThreshold = 0.179;
 
 export default {
   name: 'ContextPopup',
-
-  components: {
-    SvgIcon,
-  },
+  components: {SvgIcon},
 
   data: () => ({
     loading: false,
